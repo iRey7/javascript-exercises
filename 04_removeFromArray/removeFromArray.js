@@ -1,5 +1,8 @@
-const removeFromArray = function(arr, remove) {
-    arr.splice(remove - 1, 1);
+const removeFromArray = function(arr, removeA, removeB) {
+    arr.splice(removeA - 1, 1);
+    if(removeB >= 0) {
+        arr.splice(removeB - 1, 1);
+    }
 
     return arr;
 };
