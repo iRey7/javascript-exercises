@@ -1,10 +1,13 @@
-const removeFromArray = function(arr, removeA, removeB) {
-    arr.splice(removeA - 1, 1);
-    if(removeB >= 0) {
-        arr.splice(removeB - 1, 1);
-    }
+const removeFromArray = function(array, ...args) {
+    const newArray = [];
 
-    return arr;
+    array.forEach((item) => {
+        if (!args.includes(item)) {
+            newArray.push(item);
+        }
+    });
+
+    return newArray;
 };
 
 // Do not edit below this line
