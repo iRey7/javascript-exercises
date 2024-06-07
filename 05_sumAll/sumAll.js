@@ -6,6 +6,11 @@ const sumAll = function(a, b) {
             array.push(i);
         }
     }
+    if (b <= a) {
+        for (let i = b; i <= a; ++i) {
+            array.push(i);
+        }
+    }
     array.forEach(myFunction);
     function myFunction(item) {
         total += item;
