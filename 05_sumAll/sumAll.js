@@ -1,7 +1,7 @@
 const sumAll = function(a, b) {
     let total = 0;
     let array = [];
-    if (a < 0) {
+    if (a < 0 || typeof a !== "number") {
         return 'ERROR';
     }
     else if (a <= b && a > 0) {
@@ -10,7 +10,7 @@ const sumAll = function(a, b) {
         }
     }
 
-    if (b < 0) {
+    if (b < 0 || typeof b !== "number") {
         return 'ERROR';
     }
     else if (b <= a && b > 0) {
