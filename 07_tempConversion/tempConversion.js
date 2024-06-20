@@ -7,16 +7,17 @@ const convertToCelsius = function(f) {
   else {
     return rounded;
   }
-  //let roundedNumber = celsius.toFixed(1);
-
-  //return roundedNumber;
 };
 
 const convertToFahrenheit = function(c) {
   let fahrenheit = (c * 9 / 5 + 32);
-  let roundedNumber = fahrenheit.toFixed(1);
-
-  return roundedNumber;
+  let rounded = Math.round(fahrenheit * 10) / 10;
+  if (fahrenheit === 0) {
+    return fahrenheit;
+  }
+  else {
+    return rounded;
+  }
 };
 
 // Do not edit below this line
