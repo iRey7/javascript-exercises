@@ -1,10 +1,11 @@
 const convertToCelsius = function(f) {
   let celsius = (f - 32) * 5 / 9;
+  let rounded = Math.round(celsius * 10) / 10;
   if (celsius === 0) {
     return celsius;
   }
   else {
-    return celsius.toFixed(1);
+    return rounded;
   }
   //let roundedNumber = celsius.toFixed(1);
 
